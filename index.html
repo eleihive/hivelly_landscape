@@ -31,11 +31,11 @@
 
 
 	// Find matches
-	var mql = window.matchMedia("(orientation: landscape)");
+	var mql = window.matchMedia("(orientation: portrait)");
 	
 	// If there are matches, we're in portrait
 	if(mql.matches) {  
-	  window.location = "https://eleihive.github.io/hivelly_desktop/";
+	  window.location = "https://eleihive.github.io/hivellyportrait/";
 	} else {  
 	
 	}
@@ -43,7 +43,7 @@
 	// Add a media query change listener
 	mql.addListener(function(m) {
 	  if(m.matches) {
-		window.location = "https://eleihive.github.io/hivelly_desktop/";
+		window.location = "https://eleihive.github.io/hivellyportrait/";
 	  }
 	  else {
 	   

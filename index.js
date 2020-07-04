@@ -24941,133 +24941,161 @@ if (reversed == null) { reversed = false; }
 	this.instance_2.setTransform(1161.05,483.45,1,1,0,0,0,267.3,90.5);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(57).to({_off:false},0).to({_off:true},4).wait(6));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(57).to({_off:false},0).to({y:470.15},3).to({_off:true},1).wait(6));
 
 	// Capa_14
 	this.instance_3 = new lib.you();
 	this.instance_3.setTransform(761.85,483.45,1,1,0,0,0,117.9,90.5);
+	this.instance_3._off = true;
 
 	this.instance_4 = new lib.you2();
 	this.instance_4.setTransform(761.85,461.55,1,1,0,0,0,117.9,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_3}]},53).to({state:[{t:this.instance_4}]},4).to({state:[]},4).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(53).to({_off:false},0).to({_off:true,y:461.55},4).wait(10));
 
 	// Capa_13
 	this.instance_5 = new lib.brand();
 	this.instance_5.setTransform(434.05,489.45,1,1,0,0,0,190.1,90.5);
+	this.instance_5._off = true;
 
 	this.instance_6 = new lib.brand2();
 	this.instance_6.setTransform(434.05,461.55,1,1,0,0,0,190.1,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},49).to({state:[{t:this.instance_6}]},4).to({state:[]},8).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(49).to({_off:false},0).to({_off:true,y:461.55},4).wait(14));
 
 	// Capa_12
 	this.instance_7 = new lib.the();
 	this.instance_7.setTransform(125.05,483.45,1,1,0,0,0,106.4,90.5);
+	this.instance_7._off = true;
 
 	this.instance_8 = new lib.the2();
 	this.instance_8.setTransform(125.05,461.55,1,1,0,0,0,106.4,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_7}]},45).to({state:[{t:this.instance_8}]},4).to({state:[]},12).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(45).to({_off:false},0).to({_off:true,y:461.55},4).wait(18));
 
 	// Capa_11
 	this.instance_9 = new lib.into();
 	this.instance_9.setTransform(201.55,287.85,1,1,0,0,0,194.6,131.3);
+	this.instance_9._off = true;
 
 	this.instance_10 = new lib.into2();
 	this.instance_10.setTransform(201.55,259.85,1,1,0,0,0,194.6,131.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_9}]},41).to({state:[{t:this.instance_10}]},4).to({state:[]},16).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(41).to({_off:false},0).to({_off:true,y:259.85},4).wait(22));
 
 	// Capa_10
 	this.instance_11 = new lib.life();
 	this.instance_11.setTransform(1041.8,100.35,1,1,0,0,0,99.4,90.5);
+	this.instance_11._off = true;
 
 	this.instance_12 = new lib.LIFE2();
 	this.instance_12.setTransform(1041.8,68.35,1,1,0,0,0,99.4,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_11}]},37).to({state:[{t:this.instance_12}]},4).to({state:[]},20).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(37).to({_off:false},0).to({_off:true,y:68.35},4).wait(26));
 
 	// Capa_9
 	this.instance_13 = new lib.new2();
 	this.instance_13.setTransform(786.45,100.35,1,1,0,0,0,133.9,90.5);
+	this.instance_13._off = true;
 
 	this.instance_14 = new lib.new3();
 	this.instance_14.setTransform(786.45,68.35,1,1,0,0,0,133.9,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_13}]},33).to({state:[{t:this.instance_14}]},4).to({state:[]},24).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(33).to({_off:false},0).to({_off:true,y:68.35},4).wait(30));
 
 	// Capa_8
 	this.instance_15 = new lib.breathinh();
 	this.instance_15.setTransform(318.45,100.35,1,1,0,0,0,308.1,90.5);
+	this.instance_15._off = true;
 
 	this.instance_16 = new lib.breathing();
 	this.instance_16.setTransform(318.45,68.35,1,1,0,0,0,308.1,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_15}]},29).to({state:[{t:this.instance_16}]},4).to({state:[]},28).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(29).to({_off:false},0).to({_off:true,y:68.35},4).wait(34));
 
 	// Capa_7
 	this.instance_17 = new lib.by();
 	this.instance_17.setTransform(123.9,-108.6,1,1,0,0,0,116.3,131.3);
+	this.instance_17._off = true;
 
 	this.instance_18 = new lib.by2();
 	this.instance_18.setTransform(123.9,-137.6,1,1,0,0,0,116.3,131.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_17}]},25).to({state:[{t:this.instance_18}]},4).to({state:[]},32).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(25).to({_off:false},0).to({_off:true,y:-137.6},4).wait(38));
 
 	// Capa_6
 	this.instance_19 = new lib.journeu();
 	this.instance_19.setTransform(530.15,-292.45,1,1,0,0,0,242.8,90.5);
+	this.instance_19._off = true;
 
 	this.instance_20 = new lib.journey2();
 	this.instance_20.setTransform(530.15,-314.45,1,1,0,0,0,242.8,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_19}]},21).to({state:[{t:this.instance_20}]},4).to({state:[]},36).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(21).to({_off:false},0).to({_off:true,y:-314.45},4).wait(42));
 
 	// Capa_5
 	this.instance_21 = new lib._this();
 	this.instance_21.setTransform(138.1,-293,1,1,0,0,0,118.7,90.5);
+	this.instance_21._off = true;
 
 	this.instance_22 = new lib.this2();
 	this.instance_22.setTransform(138.1,-317,1,1,0,0,0,118.7,90.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_21}]},17).to({state:[{t:this.instance_22}]},4).to({state:[]},40).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_21).wait(17).to({_off:false},0).to({_off:true,y:-317},4).wait(46));
 
 	// Capa_4
 	this.instance_23 = new lib.begin();
 	this.instance_23.setTransform(653.8,-468.6,1,1,0,0,0,122.2,63.3);
+	this.instance_23._off = true;
 
 	this.instance_24 = new lib.begin2();
 	this.instance_24.setTransform(653.8,-485.6,1,1,0,0,0,122.2,63.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_23}]},13).to({state:[{t:this.instance_24}]},4).to({state:[]},44).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(13).to({_off:false},0).to({_off:true,y:-485.6},4).wait(50));
 
 	// Capa_3
 	this.instance_25 = new lib.to();
 	this.instance_25.setTransform(472.25,-467.6,1,1,0,0,0,47.3,63.3);
+	this.instance_25._off = true;
 
 	this.instance_26 = new lib.to2();
 	this.instance_26.setTransform(472.25,-485.6,1,1,0,0,0,47.3,63.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_25}]},9).to({state:[{t:this.instance_26}]},4).to({state:[]},48).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_25).wait(9).to({_off:false},0).to({_off:true,y:-485.6},4).wait(54));
 
 	// Capa_2
 	this.instance_27 = new lib.want();
 	this.instance_27.setTransform(295.65,-466.6,1,1,0,0,0,111.2,63.3);
+	this.instance_27._off = true;
 
 	this.instance_28 = new lib.want2();
 	this.instance_28.setTransform(295.65,-485.6,1,1,0,0,0,111.2,63.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_27}]},5).to({state:[{t:this.instance_28}]},4).to({state:[]},52).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_27).wait(5).to({_off:false},0).to({_off:true,y:-485.6},4).wait(58));
 
 	// Capa_1
 	this.instance_29 = new lib.We();
 	this.instance_29.setTransform(93.6,-467.6,1,1,0,0,0,70.5,63.3);
+	this.instance_29._off = true;
 
 	this.instance_30 = new lib.we2();
 	this.instance_30.setTransform(93.6,-485.6,1,1,0,0,0,70.5,63.3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_29}]},1).to({state:[{t:this.instance_30}]},4).to({state:[]},56).to({state:[]},4).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_29).wait(1).to({_off:false},0).to({_off:true,y:-485.6},4).wait(62));
 
 	// Capa_17
 	this.instance_31 = new lib.fondomensajeHello();
@@ -26600,7 +26628,7 @@ lib.properties = {
 	color: "#000000",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_1.png?1593860750774", id:"index_atlas_1"}
+		{src:"images/index_atlas_1.png?1593862160444", id:"index_atlas_1"}
 	],
 	preloads: []
 };

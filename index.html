@@ -65,8 +65,11 @@
 
 
 
+
+
+
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="brand.hivelly.js?1593588132238"></script>
+<script src="index.js?1593826296677"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -95,7 +98,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.brandHivelly_vert();
+	exportRoot = new lib.BRAND_FOriginalVert();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
@@ -103,7 +106,6 @@ function handleComplete(evt,comp) {
 		stage.addChild(exportRoot);
 		createjs.Ticker.framerate = lib.properties.fps;
 		createjs.Ticker.addEventListener("tick", stage);
-		stage.addEventListener("tick", stage._handleTick);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
 	AdobeAn.makeResponsive(true,'both',true,2,[canvas,anim_container,dom_overlay_container]);	
@@ -114,9 +116,9 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:960px; height:1920px">
-		<canvas id="canvas" width="960" height="1920" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:1920px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:1080px; height:1920px">
+		<canvas id="canvas" width="1080" height="1920" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1080px; height:1920px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>

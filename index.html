@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scale=no">
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>brand.hivelly</title>
+<title>ComingSoon_Vert</title>
 <!-- write your code here -->
 <style>
   body {
@@ -25,8 +25,39 @@
 	top:-100%;bottom:-100%;
   }
 </style>
+	
+	
+
+<script>
+
+
+  // Find matches
+  var mql = window.matchMedia("(orientation: landscape)");
+  
+  // If there are matches, we're in portrait
+  if(mql.matches) {  
+    window.location = "https://eleihive.github.io/hivelly_desktop/";
+  } else {  
+  
+  }
+  
+  // Add a media query change listener
+  mql.addListener(function(m) {
+    if(m.matches) {
+    window.location = "https://eleihive.github.io/hivelly_desktop/";
+    }
+    else {
+     
+    }
+  });
+    
+</script>
+
+
+
+
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1594026794680"></script>
+<script src="index.js?1594044510648"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

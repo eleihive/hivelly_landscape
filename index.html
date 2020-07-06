@@ -18,6 +18,50 @@
   body {
 	overflow:hidden;
   }
+
+
+
+
+@media all and (min-width: 400px) {
+
+.iframe {display: none;}
+
+
+}
+@media all and (max-width: 400px) {
+
+.anim_container {display: none;}
+
+
+}
+
+.iframe {
+		position: absolute;
+		z-index: 1000;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		
+	}
+
+
+
+  #loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
   #animation_container {
 	position:absolute;
 	margin:auto;
@@ -29,31 +73,6 @@
 
 
 
-
-<script>
-
-
-	// Find matches
-	var mql = window.matchMedia("(orientation: landscape)");
-	
-	// If there are matches, we're in landscape
-	if(mql.matches) {  
-	  window.location = "https://eleihive.github.io/hivelly_desktop/";
-	} else {  
-	
-	}
-	
-	// Add a media query change listener
-	mql.addListener(function(m) {
-	  if(m.matches) {
-		window.location = "https://eleihive.github.io/hivelly_desktop/";
-	  }
-	  else {
-	   
-	  }
-	});
-		
-</script>
 	
 
 

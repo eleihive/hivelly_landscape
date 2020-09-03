@@ -9,10 +9,10 @@
 -->
 <html>
 <head>
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scale=no">
+<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, user-scale=no">
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>reBranding_Portrait</title>
 <!-- write your code here -->
 <style>
   body {
@@ -25,38 +25,8 @@
 	top:-100%;bottom:-100%;
   }
 </style>
-
-
-
-<script>
-
-
-	// Find matches
-	var mql = window.matchMedia("(orientation: landscape)");
-	
-	// If there are matches, we're in landscape
-	if(mql.matches) {  
-	  window.location = "https://eleihive.github.io/hivelly_desktop/";
-	} else {  
-	
-	}
-	
-	// Add a media query change listener
-	mql.addListener(function(m) {
-	  if(m.matches) {
-	  window.location = "https://eleihive.github.io/hivelly_desktop/";
-	  }
-	  else {
-	   
-	  }
-	});
-	  
-	</script>
-
-
-
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1594044510648"></script>
+<script src="reBranding_Portrait.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -64,13 +34,13 @@ function init() {
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
 	var comp=AdobeAn.getComposition("B2C34A8A5C84924FB2AD8C9EC65F245D");
-	var lib=comp.getLibrary();
+	var secondlib=comp.getLibrary();
 	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
-	var lib=comp.getLibrary();
-	loader.loadManifest(lib.properties.manifest);
+	var secondlib=comp.getLibrary();
+	loader.loadManifest(secondlib.properties.manifest);
 }
 function handleFileLoad(evt, comp) {
 	var images=comp.getImages();	
@@ -78,25 +48,25 @@ function handleFileLoad(evt, comp) {
 }
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	var lib=comp.getLibrary();
+	var secondlib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
 	var queue = evt.target;
-	var ssMetadata = lib.ssMetadata;
+	var ssMetadata = secondlib.ssMetadata;
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.NoPluses2();
-	stage = new lib.Stage(canvas);
+	exportRoot = new secondlib.NoPluses2();
+	stage = new secondlib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
-		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.framerate = secondlib.properties.fps;
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
 	AdobeAn.makeResponsive(true,'both',true,2,[canvas,anim_container,dom_overlay_container]);	
-	AdobeAn.compositionLoaded(lib.properties.id);
+	AdobeAn.compositionLoaded(secondlib.properties.id);
 	fnStartAnimation();
 }
 </script>
